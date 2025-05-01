@@ -5,7 +5,7 @@ from transformers import pipeline
 from PIL import Image
 
 def load_image():
-    uploaded_file = st.file_uploader(label='OCRусский - распознай русский текст с изображения')
+    uploaded_file = st.file_uploader(label='Выберите изображение')
     if uploaded_file is not None:
         image_data = uploaded_file.getvalue()
         st.image(image_data)
@@ -14,7 +14,7 @@ def load_image():
         return None
 
 
-st.title('Выберите изображение для распознавания')
+st.title('OCRусский - распознай русский текст с изображения')
 img = load_image()
 
 result = st.button('Распознать текст🪄')
