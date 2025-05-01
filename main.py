@@ -5,7 +5,6 @@ from transformers import pipeline
 from PIL import Image
 
 code[class*="language-"], pre[class*="language-"]
-  border-radius: 6px
   text-shadow: 0 1px #14161800 !important
   background: #242424 !important
   span.token.operator
